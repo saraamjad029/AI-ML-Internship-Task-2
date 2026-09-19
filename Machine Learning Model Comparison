@@ -1,0 +1,39 @@
+AI/ML Internship (Task 02)
+Machine Learning Model Comparison 
+
+This repository contains the implementation and evaluation report for Task 02 of the AI/ML Internship at Devixo Solutions.
+
+Student Details
+* **Student Name:** Sara Amjad Abbasi
+* **Internship Domain:** AI/ML Internship
+* **Task Number:** Task 02
+
+ Objective & Problem Statement
+* **Objective:** Develop multiple machine learning models for a real-world prediction problem, evaluate their performance using appropriate metrics, and learn the importance of model comparison and selection.
+* **Problem Statement:** This task addresses the challenge of accurately predicting student academic outcomes (such as passing or failing) using machine learning classification algorithms. By implementing and comparing multiple models—specifically Logistic Regression, Decision Tree, and Random Forest—the objective is to evaluate how effectively different algorithms handle feature patterns, determine which model provides the highest predictive accuracy and reliability, and understand the trade-offs between training time and performance for educational data analytics.
+
+ Technologies Used
+* Python
+* Pandas
+* Scikit-learn
+* Matplotlib & Seaborn
+
+## Implementation Steps
+1. **Data Preprocessing:** Generated a classification dataset, applied standard scaling (`StandardScaler`), and split the data into 80% training and 20% testing sets.
+2. **Model Development:** Trained three machine learning algorithms: Logistic Regression, Decision Tree Classifier, and Random Forest Classifier.
+3. **Model Evaluation:** Evaluated each model using Accuracy, Precision, Recall, and F1 Score.
+
+## Model Comparison Results
+
+| Model Name | Training Time (s) | Accuracy | Precision | Recall | F1 Score | Advantages | Limitations |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Logistic Regression** | 0.02 | 0.773 | 0.7737 | 0.773 | 0.7726 | Fast training, simple | Lower accuracy on complex patterns |
+| **Decision Tree** | 0.10 | 0.891 | 0.8911 | 0.891 | 0.8910 | Easy to interpret | Prone to overfitting |
+| **Random Forest** | 0.88 | 0.958 | 0.9583 | 0.958 | 0.9580 | Highest accuracy and stability | Slightly slower training time |
+
+## Conclusion
+* **Recommended Model:** **Random Forest Classifier**
+* **Why it performed better:** Random Forest achieved the highest overall accuracy (0.958) and F1 Score (0.9580) because it uses an ensemble of multiple decision trees, reducing overfitting and capturing complex patterns much better than individual models.
+
+## Source Code File
+* `Task-2-Source-Code.ipynb`: Contains the complete, self-contained Python code used for data generation, preprocessing, model training, and performance evaluation.
